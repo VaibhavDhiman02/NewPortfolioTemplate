@@ -412,3 +412,68 @@ form button{
 form button:hover{
     background-color: #8d99ae30;
 }
+
+@media (max-width: 1024px) {
+    .all-content {
+        width: 90%;
+    }
+
+    .img-links {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #8d99ae;
+    }
+
+    .all {
+        flex-direction: column;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-links {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-links .img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .all-proj {
+        height: 300px;
+        grid-template-columns: auto;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-links {
+        padding: 5px;
+    }
+
+    .img-links .img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .img-links ul li {
+        padding: 5px 40px;
+        font-size: 10px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+    }
+
+    form textarea{
+        height: 100px;
+    }
+}
